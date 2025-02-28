@@ -4,11 +4,12 @@ const mysql = require('mysql2');
 
 const router = express.Router();
 const db = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
+    host: 'localhost',
+    user: 'root',
+    password: 'Nikita@1609',
+    database: 'task_manager'
 });
+
 
 
 db.connect((err) => {
